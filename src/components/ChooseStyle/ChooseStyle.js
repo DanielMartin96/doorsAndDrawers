@@ -135,7 +135,25 @@ const venice = importAll(
   require.context("../../assets/images/venice", false, /.(png|jpe?g|svg)$/)
 );
 
+// imports all the images from the euroline folder in assets/images
+const verona = importAll(
+  require.context("../../assets/images/verona", false, /.(png|jpe?g|svg)$/)
+);
 
+// imports all the images from the euroline folder in assets/images
+const warwick = importAll(
+  require.context("../../assets/images/warwick", false, /.(png|jpe?g|svg)$/)
+);
+
+// imports all the images from the euroline folder in assets/images
+const westbury = importAll(
+  require.context("../../assets/images/westbury", false, /.(png|jpe?g|svg)$/)
+);
+
+// imports all the images from the euroline folder in assets/images
+const york = importAll(
+  require.context("../../assets/images/york", false, /.(png|jpe?g|svg)$/)
+);
 
 // Where all the colours and styles will be held. Will be a pretty long array. Each colour has an images array which will hold all the styles of that colour.
 // Alabaster is a good example of the functionality
@@ -187,6 +205,18 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany high gloss white.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice high gloss white.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona high gloss white.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york high gloss white.jpg"].default,
+      },
     ],
   },
   {
@@ -236,6 +266,18 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany high gloss cream.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice high gloss cream.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona high gloss cream.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york high gloss cream.jpg"].default,
+      },
     ],
   },
   {
@@ -280,6 +322,18 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany High Gloss Light Grey.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice High Gloss Light Grey.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona High Gloss Light Grey.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York High Gloss Light Grey.jpg"].default,
       },
     ],
   },
@@ -330,6 +384,18 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany High Gloss Dust Grey.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice High Gloss Dust Grey.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona High Gloss Dust Grey.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York High Gloss Dust Grey.jpg"].default,
+      },
     ],
   },
   {
@@ -378,6 +444,18 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany high gloss cashmere.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice high gloss cashmere.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona high gloss cashmere.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york high gloss cashmere.png"].default,
       },
     ],
   },
@@ -480,6 +558,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Porcelain.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Porcelain.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Porcelain.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Porcelain.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Porcelain.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Porcelain.jpg"].default,
+      },
     ],
   },
   {
@@ -577,6 +675,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany satin white.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice satin white.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona satin white.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick satin white.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury satin white.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york satin white.jpg"].default,
+      },
     ],
   },
   {
@@ -673,6 +791,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Super White Ash.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Super White Ash.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Super White Ash.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Super White Ash.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Super White Ash.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Super White Ash.png"].default,
       },
     ],
   },
@@ -775,6 +913,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany alabaster.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice alabaster.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona alabaster.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick alabaster.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury alabaster.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york alabaster.jpg"].default,
+      },
     ],
   },
   {
@@ -876,6 +1034,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany ivory.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice ivory.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona ivory.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick ivory.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury Ivory.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york ivory.jpg"].default,
+      },
     ],
   },
   {
@@ -972,6 +1150,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany vanilla.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice vanilla.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona vanilla.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick vanilla.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury vanilla.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york vanilla.jpg"].default,
       },
     ],
   },
@@ -1074,6 +1272,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Opengrain White.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Opengrain White.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Opengrain White.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Opengrain White.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Opengrain White.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Opengrain White.png"].default,
+      },
     ],
   },
   {
@@ -1170,6 +1388,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Oakgrain Cream.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Oakgrain Cream.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Oakgrain Cream.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Oakgrain Cream.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Oakgrain Cream.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Oakgrain Cream.png"].default,
       },
     ],
   },
@@ -1272,6 +1510,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Oakgrain Mussel.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Oakgrain Mussel.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Oakgrain Mussel.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Oakgrain Mussel.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Oakgrain Mussel.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Oakgrain Mussel.png"].default,
+      },
     ],
   },
   {
@@ -1368,6 +1626,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Oakgrain Cashmere.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Oakgrain Cashmere.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Oakgrain Cashmere.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Oakgrain Cashmere.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Oakgrain Cashmere.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Oakgrain Cashmere.png"].default,
       },
     ],
   },
@@ -1470,6 +1748,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Oakgrain Grey.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Oakgrain Grey.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Oakgrain Grey.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Oakgrain Grey.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Oakgrain Grey.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Oakgrain Grey.png"].default,
+      },
     ],
   },
   {
@@ -1570,6 +1868,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Matt Mussel.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Mussel.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Mussel.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Mussel.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Mussel.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Mussel.jpg"].default,
       },
     ],
   },
@@ -1672,6 +1990,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany matt pebble.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice matt pebble.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona matt pebble.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick matt pebble.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury matt pebble.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york matt pebble.png"].default,
+      },
     ],
   },
   {
@@ -1768,6 +2106,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Matt Cashmere.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Cashmere.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Cashmere.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Cashmere.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Cashmere.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Cashmere.jpg"].default,
       },
     ],
   },
@@ -1870,6 +2228,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Matt Dove Grey.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Dove Grey.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Dove Grey.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Dove Grey.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Dove Grey.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Dove Grey.jpg"].default,
+      },
     ],
   },
   {
@@ -1970,6 +2348,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Matt Dust Grey.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Dust Grey.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Dust Grey.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Dust Grey.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Dust Grey.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Dust Grey.jpg"].default,
       },
     ],
   },
@@ -2072,6 +2470,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Matt Dakar.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Dakkar.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Dakkar.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Dakkar.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Dakkar.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Dakkar.jpg"].default,
+      },
     ],
   },
   {
@@ -2172,6 +2590,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany matt taupe.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice matt taupe.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona matt taupe.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick matt taupe.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury matt taupe.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york matt taupe.png"].default,
       },
     ],
   },
@@ -2274,6 +2712,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Matt Stone Grey.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Stone Grey.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Stone Grey.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Stone Grey.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Grey Stone.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Grey Stone.jpg"].default,
+      },
     ],
   },
   {
@@ -2370,6 +2828,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany matt denim.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice matt denim.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona matt denim.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick matt denim.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury matt denim.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["york matt denim.jpg"].default,
       },
     ],
   },
@@ -2472,6 +2950,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Matt Indigo Blue.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Indigo Blue.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Indigo Blue.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Indigo Blue.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Indigo Blue.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Indigo Blue.jpg"].default,
+      },
     ],
   },
   {
@@ -2568,6 +3066,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany matt kombu green.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice matt kombu green.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona matt kombu green.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick matt kombu green.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury matt kombu green.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york matt kombu green.png"].default,
       },
     ],
   },
@@ -2670,6 +3188,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Matt Graphite.jpg"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Matt Graphite.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Matt Graphite.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Matt Graphite.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Matt Graphite.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Matt Graphite.jpg"].default,
+      },
     ],
   },
   {
@@ -2770,6 +3308,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany matt black.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice matt black.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona matt black.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick matt black.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury matt black.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york matt black.png"].default,
       },
     ],
   },
@@ -2872,6 +3430,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany London Concrete.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice London Concrete.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona London Concrete.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick London Concrete.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury London Concrete.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York London Concrete.png"].default,
+      },
     ],
   },
   {
@@ -2972,6 +3550,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Moldau Acacia.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Moldau Acacia.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Moldau Acacia.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Moldau Acacia.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Moldau Acacia.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Moldau Acacia.png"].default,
       },
     ],
   },
@@ -3074,6 +3672,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Canadian Maple.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Canadian Maple.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Canadian Maple.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Canadian Maple.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Canadian Maple.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Canadian Maple.png"].default,
+      },
     ],
   },
   {
@@ -3174,6 +3792,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["tuscany halifax oak white.png"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["venice halifax oak white.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona halifax oak white.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick halifax oak white.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury halifax oak white.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york halifax oak white.png"].default,
       },
     ],
   },
@@ -3276,6 +3914,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["tuscany halifax oak natural.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["venice halifax oak natural.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["verona halifax oak natural.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["warwick halifax oak natural.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["westbury halifax oak natural.png"].default,
+      },
+      {
+        name: "York",
+        src: york["york halifax oak natural.png"].default,
+      },
     ],
   },
   {
@@ -3377,6 +4035,26 @@ const styles = [
         name: "Tuscany",
         src: tuscany["Tuscany Lissa Oak.png"].default,
       },
+      {
+        name: "Venice",
+        src: venice["Venice Lissa Oak.png"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Lissa Oak.png"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Lissa Oak.png"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Lissa Oak.png"].default,
+      },
+      {
+        name: "York",
+        src: york["York Lissa Oak.png"].default,
+      },
     ],
   },
   {
@@ -3477,6 +4155,26 @@ const styles = [
       {
         name: "Tuscany",
         src: tuscany["Tuscany Paintable.jpg"].default,
+      },
+      {
+        name: "Venice",
+        src: venice["Venice Paintable.jpg"].default,
+      },
+      {
+        name: "Verona",
+        src: verona["Verona Paintable.jpg"].default,
+      },
+      {
+        name: "Warwick",
+        src: warwick["Warwick Paintable.jpg"].default,
+      },
+      {
+        name: "Westbury",
+        src: westbury["Westbury Paintable.jpg"].default,
+      },
+      {
+        name: "York",
+        src: york["York Paintable.jpg"].default,
       },
     ],
   },

@@ -26,10 +26,6 @@ const highGloss = [
     src: "",
   },
   {
-    name: "High Gloss Ivory",
-    src: "",
-  },
-  {
     name: "Super White Ash",
     src: "",
   },
@@ -179,11 +175,7 @@ const ChooseColour = ({ setKey, setColour }) => {
                   <Card.Body
                     style={{ display: "flex", justifyContent: "center", width: "100px" }}
                   >
-                    <img
-                      src={colour.src}
-                      alt={colour.name}
-                      style={{ maxWidth: "100px" }}
-                    />
+
                   </Card.Body>
                 </Card>
               );
@@ -221,7 +213,7 @@ const ChooseColour = ({ setKey, setColour }) => {
                   <Card.Body
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-                    <img src={colour.src} alt={colour.name} />
+
                   </Card.Body>
                 </Card>
               );
@@ -262,11 +254,7 @@ const ChooseColour = ({ setKey, setColour }) => {
                       justifyContent: "center",
                     }}
                   >
-                    <img
-                      src={colour.src}
-                      alt={colour.name}
-                      style={{ margin: "0px" }}
-                    />
+
                   </Card.Body>
                 </Card>
               );
