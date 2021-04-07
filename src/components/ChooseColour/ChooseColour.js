@@ -180,13 +180,13 @@ const ChooseColour = ({ setKey, setColour }) => {
               display: "flex",
               flexWrap: "wrap",
               alignItems: "center",
-              justifyContent: "space-evenly",
+              justifyContent: "space-around"
             }}
           >
             {options.map((colour, idx) => {
               return (
                 <Card
-                  style={{ margin: "10px", cursor: "pointer" }}
+                  style={{ margin: "5px", cursor: "pointer", width: "200px", }}
                   onClick={(e) => {
                     setKey("style");
                     setColour(colour.name);
@@ -194,7 +194,7 @@ const ChooseColour = ({ setKey, setColour }) => {
                   key={idx}
                 >
                   <Card.Header>
-                    <h5 style={{ textAlign: "center" }}>{colour.name}</h5>
+                    <p style={{ textAlign: "center" }}>{colour.name}</p>
                   </Card.Header>
                   <Card.Body
                     style={{ display: "flex", justifyContent: "center" }}
