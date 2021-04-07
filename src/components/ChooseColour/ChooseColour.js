@@ -16,120 +16,150 @@ const colours = importAll(
 );
 
 // These arrays are where you would add new colours
-const highGloss = [
+const options = [
   {
     name: "High Gloss White",
-    src: "",
+    src: colours["High Gloss White.jpg"].default,
   },
   {
     name: "High Gloss Cream",
-    src: "",
+    src: colours["High Gloss Cream.jpg"].default,
   },
   {
-    name: "Super White Ash",
-    src: "",
-  },
-];
-
-const textured = [
-  {
-    name: "London Concrete",
-    src: "",
+    name: "High Gloss Light Grey",
+    src: colours["High Gloss Light Grey.jpg"].default,
   },
   {
-    name: "Opengrain White",
-    src: "",
+    name: "High Gloss Dust Grey",
+    src: colours["High Gloss Dust Grey.jpg"].default,
   },
   {
-    name: "Oakgrain Cream",
-    src: "",
-  },
-  {
-    name: "Oakgrain Grey",
-    src: "",
-  },
-  {
-    name: "Oakgrain Cashmere",
-    src: "",
-  },
-  {
-    name: "Oakgrain Mussel",
-    src: "",
-  },
-];
-
-const satinMatt = [
-  {
-    name: "Satin White",
-    src: "",
+    name: "High Gloss Cashmere",
+    src: colours["High Gloss Cashmere.jpg"].default,
   },
   {
     name: "Porcelain White",
-    src: "",
+    src: colours["Porcelaine white.jpg"].default,
+  },
+  {
+    name: "Satin White",
+    src: colours["Satin White.jpg"].default,
+  },
+  {
+    name: "Super White Ash",
+    src: colours["Super White Ash.jpg"].default,
   },
   {
     name: "Alabaster",
     src: colours["Alabaster.jpg"].default,
   },
   {
-    name: "Vanilla",
-    src: "",
-  },
-  {
     name: "Ivory",
-    src: "",
+    src: colours["Ivory.jpg"].default,
   },
   {
-    name: "Matt Denim",
-    src: "",
+    name: "Vanilla",
+    src: colours["Vanilla.jpg"].default,
+  },
+  {
+    name: "Opengrain White",
+    src: colours["Opengrain White.jpg"].default,
+  },
+  {
+    name: "Oakgrain Cream",
+    src: colours["Opengrain White.jpg"].default,
+  },
+  {
+    name: "Oakgrain Mussel",
+    src: colours["Oakgrain Mussel.jpg"].default,
+  },
+  {
+    name: "Oakgrain Cashmere",
+    src: colours["Oakgrain Cashmere.jpg"].default,
+  },
+  {
+    name: "Oakgrain Grey",
+    src: colours["Oakgrain Grey.jpg"].default,
   },
   {
     name: "Matt Mussel",
-    src: "",
+    src: colours["Matt Mussel.jpg"].default,
   },
   {
-    name: "Matt Dove Grey",
-    src: "",
+    name: "Matt Pebble",
+    src: colours["Matt Pebble.jpg"].default,
   },
   {
     name: "Matt Cashmere",
-    src: "",
+    src: colours["Matt Cashmere.jpg"].default,
   },
   {
-    name: "Matt Dakkar",
-    src: "",
-  },
-  {
-    name: "Matt Stone Grey",
-    src: "",
-  },
-  {
-    name: "Matt Graphite",
-    src: "",
-  },
-  {
-    name: "Moldau Acacia",
-    src: "",
-  },
-  {
-    name: "Canadian Maple",
-    src: "",
-  },
-  {
-    name: "Lissa Oak",
-    src: "",
-  },
-  {
-    name: "Paintable",
-    src: "",
+    name: "Matt Dove Grey",
+    src: colours["Matt Dove Grey.jpg"].default,
   },
   {
     name: "Matt Dust Grey",
-    src: colours["Halifax White Oak.jpg"].default,
+    src: colours["Matt Dust Grey.jpg"].default,
+  },
+  {
+    name: "Matt Dakkar",
+    src: colours["Matt Dakkar.jpg"].default,
+  },
+  {
+    name: "Matt Taupe",
+    src: colours["Matt Taupe.jpg"].default,
+  },
+  {
+    name: "Matt Stone Grey",
+    src: colours["Matt Stone Grey.jpg"].default,
+  },
+  {
+    name: "Matt Denim",
+    src: colours["Matt Denim.jpg"].default,
   },
   {
     name: "Matt Indigo Blue",
-    src: "",
+    src: colours["Matt Indigo Blue.jpg"].default,
+  },
+  {
+    name: "Matt Kombu Green",
+    src: colours["Matt Kombu Green.jpg"].default,
+  },
+  {
+    name: "Matt Graphite",
+    src: colours["Matt Graphite.jpg"].default,
+  },
+  {
+    name: "Matt Black",
+    src: ""
+  },
+  {
+    name: "London Concrete",
+    src: colours["London Concrete.jpg"].default
+  },
+  {
+    name: "Moldua Acacia",
+    src: ''
+  },
+  {
+    name: "Canadian Maple",
+    src: colours["Canadian Maple.jpg"].default
+  },
+  {
+    name: "Halifax White Oak",
+    src: colours["Halifax White Oak.jpg"].default
+  },
+  {
+    name: "Halifax Natural Oak",
+    src: colours["Halifax Natural Oak.jpg"].default
+  },
+  {
+    name: "Lissa Oak",
+    src: colours["Lissa Oak.jpg"].default
+  },
+  {
+    name: "Paintable",
+    src: colours["Paintable Vinyl.jpg"].default
   },
 ];
 
@@ -145,12 +175,6 @@ const ChooseColour = ({ setKey, setColour }) => {
       </Card.Header>
       <Card.Body>
         <div>
-          <div>
-            <h4>
-              <b>High Gloss</b>
-            </h4>
-            <hr />
-          </div>
           <div
             style={{
               display: "flex",
@@ -159,45 +183,7 @@ const ChooseColour = ({ setKey, setColour }) => {
               justifyContent: "space-evenly",
             }}
           >
-            {highGloss.map((colour, idx) => {
-              return (
-                <Card
-                  style={{ margin: "10px", cursor: "pointer" }}
-                  onClick={(e) => {
-                    setKey("style");
-                    setColour(colour.name);
-                  }}
-                  key={idx}
-                >
-                  <Card.Header>
-                    <h5 style={{ textAlign: "center" }}>{colour.name}</h5>
-                  </Card.Header>
-                  <Card.Body
-                    style={{ display: "flex", justifyContent: "center", width: "100px" }}
-                  >
-
-                  </Card.Body>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>
-              <b>Textured</b>
-            </h4>
-            <hr />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {textured.map((colour, idx) => {
+            {options.map((colour, idx) => {
               return (
                 <Card
                   style={{ margin: "10px", cursor: "pointer" }}
@@ -213,48 +199,7 @@ const ChooseColour = ({ setKey, setColour }) => {
                   <Card.Body
                     style={{ display: "flex", justifyContent: "center" }}
                   >
-
-                  </Card.Body>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>
-              <b>Satin - Matt</b>
-            </h4>
-            <hr />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {satinMatt.map((colour, idx) => {
-              return (
-                <Card
-                  style={{ margin: "10px", cursor: "pointer" }}
-                  onClick={(e) => {
-                    setKey("style");
-                    setColour(colour.name);
-                  }}
-                  key={idx}
-                >
-                  <Card.Header>
-                    <h5 style={{ textAlign: "center" }}>{colour.name}</h5>
-                  </Card.Header>
-                  <Card.Body
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-
+                    <img src={colour.src} alt={colour.name} />
                   </Card.Body>
                 </Card>
               );
